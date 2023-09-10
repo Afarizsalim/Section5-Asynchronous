@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     berita.showBerita();
 
-    const searchButton = document.getElementById("searchButton");
     const searchInput = document.getElementById("searchInput");
 
-    searchButton.addEventListener("click", () => {
+    searchInput.addEventListener("input", () => {
         const kataKunci = searchInput.value;
         berita.cariBerita(kataKunci);
     });
